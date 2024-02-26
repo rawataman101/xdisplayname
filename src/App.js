@@ -1,5 +1,5 @@
 import "./index.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function App() {
   const [firstName, setFirstName] = useState("");
@@ -11,8 +11,6 @@ export default function App() {
     e.preventDefault();
     setFullName(`${firstName} ${lastName}`);
     sethasFullName(true);
-    setFirstName("");
-    setLastName("");
   };
 
   return (
